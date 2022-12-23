@@ -19,13 +19,6 @@ public class Author {
         return this.lastname;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
-    }
     @Override
     public String toString() {
         return firstName+" "+lastname;
