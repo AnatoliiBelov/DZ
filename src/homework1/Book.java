@@ -1,12 +1,14 @@
 package homework1;
 
-class Book {
-    String name;
-    int dateOfPublication;
+public class Book {
+    private String name;
+    private String author;
+    private int dateOfPublication;
 
-    public Book(String name, int dateOfPublication) {
+    public Book(String name, int dateOfPublication, String Autor) {
         this.name = name;
         this.dateOfPublication = dateOfPublication;
+        this.author = Autor;
 
 
     }
@@ -19,13 +21,21 @@ class Book {
         return this.dateOfPublication;
     }
 
+    public String getAuthor() {
+        return this.author;
+    }
+
     public void setName(String name) {
         this.name = name;
-
     }
 
     public void setDateOfPublication(int dateOfPublication) {
         this.dateOfPublication = dateOfPublication;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+
     }
 }
 

@@ -1,8 +1,8 @@
 package homework1;
 
-class Author {
-    String firstName;
-    String lastname;
+public class Author {
+    private String firstName;
+    private String lastname;
 
     public Author(String firstName, String lastname) {
         this.firstName = firstName;
@@ -24,5 +24,6 @@ class Author {
     public void setLastname(String lastname) {
         this.lastname = lastname;
     }
+
 
 }
