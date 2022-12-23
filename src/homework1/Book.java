@@ -27,10 +27,6 @@ public class Book {
         return this.author;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public void setDateOfPublication(int dateOfPublication) {
         this.dateOfPublication = dateOfPublication;
     }
