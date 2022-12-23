@@ -1,8 +1,10 @@
 package homework1;
 
+import java.util.Objects;
+
 public class Book {
     private String name;
-    private String author;
+    private final String author;
     private int dateOfPublication;
 
     public Book(String name, int dateOfPublication, String Autor) {
@@ -33,9 +35,25 @@ public class Book {
         this.dateOfPublication = dateOfPublication;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
 
+  @Override
+  public  String toString() {
+        return "Наименование книги: "+this.name+" Автор: "+author+" Дата публикации: "+dateOfPublication;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return dateOfPublication == book.dateOfPublication && name.equals(book.name) && author.equals(book.author);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, author, dateOfPublication);
     }
 }
+
+
 

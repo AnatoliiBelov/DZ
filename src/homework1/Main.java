@@ -10,6 +10,9 @@ public class Main {
         warAndPiece.setName("WAR AND PIECE");
         System.out.println("warAndPiece.getName() = " + warAndPiece.getName());
 
+        System.out.println(warAndPiece);
+        System.out.println(warAndPiece.hashCode());
+
 
     }
 
