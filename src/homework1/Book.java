@@ -4,10 +4,10 @@ import java.util.Objects;
 
 public class Book {
     private String name;
-    private final String author;
+    private final Author author;
     private int dateOfPublication;
 
-    public Book(String name, int dateOfPublication, String Autor) {
+    public Book(String name, int dateOfPublication, Author Autor) {
         this.name = name;
         this.dateOfPublication = dateOfPublication;
         this.author = Autor;
@@ -23,8 +23,8 @@ public class Book {
         return this.dateOfPublication;
     }
 
-    public String getAuthor() {
-        return this.author;
+    public Author getAuthor() {
+        return author;
     }
 
     public void setDateOfPublication(int dateOfPublication) {
